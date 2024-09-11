@@ -49,3 +49,54 @@ def testola():
 Anotest.run_tests()
 
 ```
+## Output
+```
+
+Running 5 tests...
+[1][✓] 'test_something' ... PASSED
+[2][✓] 'test_something_else' ... PASSED
+[3][✕] 'test_something_else_again' ... FAILED: 2 + 2 == 4
+[4][✕] 'test_something_else__yet_again' ... FAILED
+[5][✕] 'testola' ... FAILED
+Test cycle complete... 2/5 tests passed
+
+FAILURES =================================================
+
+TEST [3] : test_something_else_again
+
+Error Message: 2 + 2 == 4
+
+Traceback (most recent call last):
+  File "<ipython-input-88-3a4cea8a3958>", line 22, in run_tests
+    test_func()  # Run each test
+  File "<ipython-input-88-3a4cea8a3958>", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "<ipython-input-89-2b1fdeb42f9c>", line 14, in test_something_else_again
+    assert 2 + 2 == 5, "2 + 2 == 4"
+AssertionError: 2 + 2 == 4
+
+
+TEST [4] : test_something_else__yet_again
+
+Traceback (most recent call last):
+  File "<ipython-input-88-3a4cea8a3958>", line 22, in run_tests
+    test_func()  # Run each test
+  File "<ipython-input-88-3a4cea8a3958>", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "<ipython-input-89-2b1fdeb42f9c>", line 18, in test_something_else__yet_again
+    assert True == False
+AssertionError
+
+
+TEST [5] : testola
+
+Traceback (most recent call last):
+  File "<ipython-input-88-3a4cea8a3958>", line 22, in run_tests
+    test_func()  # Run each test
+  File "<ipython-input-88-3a4cea8a3958>", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "<ipython-input-89-2b1fdeb42f9c>", line 22, in testola
+    assert 69 > 420
+AssertionError
+
+```

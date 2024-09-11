@@ -10,7 +10,7 @@ anotest includes two things:
 
 anotest **IS NOT** feature rich\
 anotest **IS NOT** robust\
-anotest **IS NOT** a fully complete testing and debugging module\
+anotest **IS NOT** a fully complete testing and debugging module
 
 anotest **IS** nice and easy to use for the vast majority of simple applications and scripts.
 
@@ -22,7 +22,7 @@ Have fun
 
 from anotest import *
 
-# Initialize the test and set debug to True
+# Initialize the anotest class and set debug to True
 Anotest.debug = True
 
 @test

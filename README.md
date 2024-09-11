@@ -1,29 +1,29 @@
-# anotest
+# testdec
 Simple annotated testing for Python using the @test decorator
 
 ## About
-anotest serves one singular purpose: provide one simple uniform way to test your python code.
+testdec serves one singular purpose: provide one simple uniform way to test your python code.
 
-anotest includes two things:
-1. The Anotest class - this keeps track of all your tests, prints the results, prints failures, stacktraces, etc. You need to declare it before all of your tests and set debug to True.
+testdec includes two things:
+1. The TestDec class - this keeps track of all your tests, prints the results, prints failures, stacktraces, etc. You need to declare it before all of your tests and set debug to True.
 2. The test function - define your test functions using assertions. Place the @test decorator above these functions.
 
-anotest **IS NOT** feature rich\
-anotest **IS NOT** robust\
-anotest **IS NOT** a fully complete testing and debugging module
+testdec **IS NOT** feature rich\
+testdec **IS NOT** robust\
+testdec **IS NOT** a fully complete testing and debugging module
 
-anotest **IS** nice and easy to use for the vast majority of simple applications and scripts.
+testdec **IS** nice and easy to use for the vast majority of simple applications and scripts.
 
 Have fun
 
 
-## How to use anotest
+## How to use testdec
 ```
 
-from anotest import *
+from testdec import *
 
-# Initialize the anotest class and set debug to True
-Anotest.debug = True
+# Initialize the testdec class and set debug to True
+TestDec.debug = True
 
 @test
 def test_something():
@@ -46,7 +46,7 @@ def testola():
   assert 69 > 420
 
 # Run test
-Anotest.run_tests()
+TestDec.run_tests()
 
 ```
 ## Output

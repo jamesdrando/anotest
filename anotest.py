@@ -9,7 +9,7 @@ class Anotest:
   failures = []
 
   @classmethod
-  def run_all_tests(cls):
+  def run_tests(cls):
     if not cls.debug:
       return
     print(f"Running {len(cls._tests)} tests...")

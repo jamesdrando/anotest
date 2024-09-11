@@ -1,7 +1,7 @@
 import functools
 import traceback
 
-class Anotest:
+class TestDec:
   debug = False
   test_count = 0
   passed_count = 0
@@ -93,9 +93,9 @@ class Anotest:
 def test(func):
   @functools.wraps(func)
   def wrapper(*args, **kwargs):
-    if Anotest.debug:
+    if TestDec.debug:
       return func(*args, **kwargs)
     else:
       return None
-  Anotest._tests.append(wrapper)
+  TestDec._tests.append(wrapper)
   return wrapper

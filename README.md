@@ -8,11 +8,11 @@ anotest includes two things:
 1. The Anotest class - this keeps track of all your tests, prints the results, prints failures, stacktraces, etc. You need to declare it before all of your tests and set debug to True.
 2. The test function - define your test functions using assertions. Place the @test decorator above these functions.
 
-anotest IS NOT feature rich.
-anotest IS NOT robust
-anotest IS NOT a fully complete testing and debugging module
+anotest **IS NOT** feature rich\
+anotest **IS NOT** robust\
+anotest **IS NOT** a fully complete testing and debugging module\
 
-anotest IS nice and easy to use for the vast majority of simple applications and scripts.
+anotest **IS** nice and easy to use for the vast majority of simple applications and scripts.
 
 Have fun
 
@@ -46,6 +46,6 @@ def testola():
   assert 69 > 420
 
 # Run test
-Anotest.run_all_tests()
+Anotest.run_tests()
 
 ```
